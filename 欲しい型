@@ -1,0 +1,12 @@
+★引き渡し方
+Intentでくれ、座標はJSONで元画像と選択画像の２つ、選択画像はAsset内でよろしく、元画像はパスさえくれれば何でも
+
+//元画像パス名と選択画像ファイル名
+String originpath = ""; originpath = intent.getStringExtra("originpath");
+String selectphoto = ""; selectphoto = intent.getStringExtra("selectphoto");
+//パーツ座標取得(JSON)
+String position_origin = ""; position_origin = intent.getStringExtra("position_origin");
+String position_select = ""; position_select = intent.getStringExtra("position_select");
+        
+//サンプルJSON
+String position_origin = "[{ID:1,parts:eyes,X:240,Y:214},{ID:2,parts:eyes,X:370,Y:210},{ID:3,parts:nose,X:282,Y:219},{ID:4,parts:mouth,X:320,Y:220}]";
