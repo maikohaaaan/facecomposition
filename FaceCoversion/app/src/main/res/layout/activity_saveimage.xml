@@ -13,13 +13,14 @@
         android:scaleType="centerCrop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/img_description2" />
+
+    />
 
     <ImageView
         android:id="@+id/image_view2"
         android:scaleType="centerCrop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/img_description3" />
+         />
 
 </LinearLayout>

@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.view.View;
 
 import java.io.InputStream;
 import java.util.ArrayList;
