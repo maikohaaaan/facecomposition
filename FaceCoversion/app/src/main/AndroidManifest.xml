@@ -17,7 +17,15 @@
             </intent-filter>
         </activity>
         <activity android:name=".SelectPhoto" />
-        <activity android:name=".SelectParts"></activity>
+        <activity android:name=".SelectParts" />
+        <activity android:name=".milit" />
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="face" />
+        <!-- To use multiple models: android:value="face,model2,model3" -->
+        <activity android:name=".saveimage" />
+        <activity android:name=".finalimage"></activity>
     </application>
 
 </manifest>

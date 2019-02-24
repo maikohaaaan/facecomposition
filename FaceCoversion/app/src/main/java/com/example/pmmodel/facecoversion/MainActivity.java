@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 import android.view.View.OnClickListener;
+import com.google.firebase.FirebaseApp;
+
 
 public class MainActivity extends AppCompatActivity implements OnClickListener{
 
@@ -13,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.Button).setOnClickListener(this);
+        FirebaseApp.initializeApp(this);
     }
 
     //ボタンが押された時の処理
