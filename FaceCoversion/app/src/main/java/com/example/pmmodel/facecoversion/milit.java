@@ -45,7 +45,7 @@ public class milit extends Activity implements View.OnClickListener {
         FirebaseApp.initializeApp(this);
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
         textView = findViewById(R.id.text_view);
 
         btn1 = (Button) findViewById(R.id.send_button);
