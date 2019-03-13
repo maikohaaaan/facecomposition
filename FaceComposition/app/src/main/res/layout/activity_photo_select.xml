@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoSelectActivity">
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#4169e1"
+        android:text="Take Photo"
+        android:textColor="#f5f5f5"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#4169e1"
+        android:text="Select Photo"
+        android:textColor="#f5f5f5"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="363dp" />
+
+</android.support.constraint.ConstraintLayout>

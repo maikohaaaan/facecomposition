@@ -43,7 +43,6 @@ public class milit extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_milit);
         FirebaseApp.initializeApp(this);
-
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
         textView = findViewById(R.id.text_view);
@@ -115,7 +114,7 @@ public class milit extends Activity implements View.OnClickListener {
         // 指定したオプションを渡してインスタンスを取得
         FirebaseVisionFaceDetector detector = FirebaseVision.getInstance()
                 .getVisionFaceDetector(options);
-
+//
 
         // [START run_detector] とりあえず左目の座標を取得　inputimage1
         Task<List<FirebaseVisionFace>> result =
@@ -154,6 +153,7 @@ public class milit extends Activity implements View.OnClickListener {
                                             List<FirebaseVisionPoint> leftEyeContour =
                                                     face.getContour(FirebaseVisionFaceContour.LEFT_EYE).getPoints();
                                             Log.i("example","input1画像の値取得の成功");
+
                                             //ArrayAdapter adaptereye = new ArrayAdapter<FirebaseVisionPoint>(this, android.R.layout.simple_list_item_1, leftEyeContour);
                                             //ListView View = (ListView) findViewById(R.id.listview);
                                             //View.setAdapter(adaptereye);
@@ -232,7 +232,8 @@ public class milit extends Activity implements View.OnClickListener {
         String position_origin = "[" +
                 "{ID:1,parts:eyes,X:240,Y:214},{ID:2,parts:eyes,X:370,Y:210},{ID:3,parts:eyess,X:241,Y:230},{ID:4,parts:eyes,X:382,Y:235}," +
                 "{ID:5,parts:nose,X:282,Y:219},{ID:6,parts:nose,X:320,Y:220},{ID:7,parts:nose,X:283,Y:275},{ID:8,parts:nose,X:325,Y:276}," +
-                "{ID:9,parts:mouth,X:270,Y:296},{ID:10,parts:mouth,X:338,Y:295},{ID:11,parts:mouth,X:271,Y:310},{ID:12,parts:mouth,X:337,Y:312}" +
+                "{ID:9,parts:mouth,X:27" +
+                "0,Y:296},{ID:10,parts:mouth,X:338,Y:295},{ID:11,parts:mouth,X:271,Y:310},{ID:12,parts:mouth,X:337,Y:312}" +
                 "]";
 
         String position_select = "[" +

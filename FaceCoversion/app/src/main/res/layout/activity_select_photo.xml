@@ -10,7 +10,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="#4169e1"
-        android:text="Take Photo"
+        android:text="New Photo"
         android:textColor="#f5f5f5"
         android:textSize="25dp"
         android:id="@+id/button_takephoto"
